@@ -1,0 +1,13 @@
+.page-header{
+    padding: 25px 0;
+}
+.page-header__list{
+    display: flex;
+    justify-content: flex-end;
+}
+.page-header__item{
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
