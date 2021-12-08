@@ -1,0 +1,29 @@
+.hero > .container{
+    // background-color: #ccc;
+}
+.card-set{
+    // outline: 1px solid tomato;
+    display: flex;
+    flex-wrap: wrap; 
+    
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.card-set__item{
+    // outline: 1px solid teal;
+    flex-basis: calc(100% / 3 - 20px);
+
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.card{
+    box-shadow: $card-shadow;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card__content{
+    padding: 20px;
+}
+.card__text{
+    margin-top: 20px;
+}

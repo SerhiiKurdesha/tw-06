@@ -349,6 +349,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -368,6 +372,7 @@ h1, h2, h3, h4, h5 {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -408,5 +413,37 @@ img {
 
 .page-header__item:not(:last-child) {
   margin-right: 20px;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.card-set__item {
+  -ms-flex-preferred-size: calc(100% / 3 - 20px);
+      flex-basis: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 20px;
+}
+
+.card__text {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
